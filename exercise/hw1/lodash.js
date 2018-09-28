@@ -7,3 +7,15 @@ _.tail = function(array){
     }
     return clist
 }
+
+_.reverse = function(array){
+    clist = []
+    clist = array.reverse()
+    return clist
+} 
+
+_.join = function(array,a){
+    clist = ''
+    clist = array.join(a)
+    return clist
+}

@@ -3,6 +3,9 @@ const _ = require('../lodash')
 
 describe('lodash', function() {
   describe('tail', function() {
+    it("_.tail(['a']) equalTo [ '' ]", function() {
+      assert.deepStrictEqual(_.tail('a'), [ ])
+      });
     it("_.tail(['a', 'b', 'c', 'd']) equalTo [ 'b', 'c', 'd' ]", function() {
       assert.deepStrictEqual(_.tail(['a', 'b', 'c', 'd']), [ 'b', 'c', 'd' ])
     });
