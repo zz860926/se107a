@@ -1,0 +1,21 @@
+{
+  "name": "lodash_mocha",
+  "version": "1.0.2",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "chai": "^4.2.0"
+  },
+  "dependencies": {
+    "docdash": "^1.0.0"
+  }
+}
