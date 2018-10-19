@@ -1,7 +1,5 @@
 /**
- * 
  * Converts all elements in array into a string separated by separator.
- * 
  * @memberof _
  * @since 0.1.0
  * @category Array
@@ -17,10 +15,10 @@
  * // => 'a~b~c'
  */
 
-function join(array,a){
-    clist = ''
-    clist = array.join(a)
-    return clist
+function join (array, a) {
+  var clist = ''
+  clist = array.join(a)
+  return clist
 }
 
 module.exports = join

@@ -1,21 +1,31 @@
 {
   "name": "lodash_mocha",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "precommit": "lint-staged"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "assert": "^1.4.1",
-    "chai": "^4.2.0"
+    "chai": "^4.2.0",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0"
   },
   "dependencies": {
     "docdash": "^1.0.0"
+  },
+  "lint-staged": {
+    "linters": {
+      "lib/*.js": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
   }
 }
