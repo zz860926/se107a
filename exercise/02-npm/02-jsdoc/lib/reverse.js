@@ -20,6 +20,7 @@
  */
 
 function reverse (array) {
+  var clist
   clist = []
   clist = array.reverse()
   return clist
